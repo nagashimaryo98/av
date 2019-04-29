@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+/* --------------------------------
+初期設定
+---------------------------------*/
+
+* {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: #F2F3F4;
+}
+
+html,
+body {
+  color: #494949;
+  font-family: "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic Pro", "\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.red {
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: #2F77FF;
+}
+
+.area {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .area {
+    max-width: initial;
+    padding: 0 1rem;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.block {
+  display: block;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.pc {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .pc {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .sp {
+    display: block;
+  }
+}
+
+/* --------------------------------
+font
+---------------------------------*/
+
+.fontxll {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .fontxll {
+    font-size: 22px;
+  }
+}
+
+.fontxl {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 800px) {
+  .fontxl {
+    font-size: 20px;
+  }
+}
+
+.fontll {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .fontll {
+    font-size: 18px;
+  }
+}
+
+.fontl {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  .fontl {
+    font-size: 16px;
+  }
+}
+
+.fontm {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  .fontm {
+    font-size: 14px;
+  }
+}
+
+.fonts {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .fonts {
+    font-size: 12px;
+  }
+}
+
+.fontss {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .fontss {
+    font-size: 11px;
+  }
+}
+
+.fontxs {
+  font-size: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* --------------------------------
+header
+---------------------------------*/
+
+header#header {
+  background-color: #000;
+  position: fixed;
+  height: 70px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+}
+
+header#header .header_area {
+  padding: 0 9rem;
+  height: 70px;
+  line-height: 70px;
+}
+
+header#header .header_area .logo {
+  line-height: 70px;
+  margin-left: 14px;
+  width: 150px;
+}
+
+header#header .header_area .sub_title {
+  color: #fff;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+header#header .header_area .header_nav {
+  color: #fff;
+  display: none;
+  width: 360px;
+  height: 100%;
+  line-height: 3rem;
+  -webkit-transform: translate(312px);
+          transform: translate(312px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 0 0 2rem;
+  z-index: 10;
+  background-color: #0D0D0D;
+}
+
+header#header .header_area .header_nav.act {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  display: block;
+}
+
+header#header .header_area .header_nav .back {
+  margin-bottom: 1rem;
+  width: 50px;
+}
+
+header#header .header_area .header_nav .back:before {
+  content: "<";
+  margin-right: 10%;
+}
+
+header#header .header_area .header_nav .profimg {
+  display: inline-block;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+}
+
+header#header .header_area .header_nav .profname {
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 75%;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 2%;
+}
+
+header#header .header_area .header_nav ul {
+  border-top: 2px solid #fff;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+header#header .header_area .header_nav ul li {
+  line-height: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+header#header .header_area .header_nav ul li a {
+  color: #fff;
+}
+
+header#header .header_area .header_nav ul li a img {
+  margin-right: 3%;
+  width: 20px;
+  height: 20px;
+}
+
+header#header .header_area .header_nav ul li a div {
+  margin-left: 1.9rem;
+}
+
+header#header .header_area .drawer_button {
+  float: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+header#header .header_area .drawer_button img {
+  cursor: pointer;
+  width: 32px;
+}
+
+@media screen and (max-width: 800px) {
+  header#header {
+    line-height: 54px;
+    height: 54px;
+  }
+
+  header#header .header_area {
+    padding: 0;
+    line-height: 54px;
+    height: 54px;
+  }
+
+  header#header .header_area .logo {
+    padding: 0;
+    width: 110px;
+  }
+
+  header#header .header_area .drawer_button {
+    line-height: 54px;
+    height: 54px;
+  }
+
+  header#header .header_area .drawer_button img {
+    width: 28px;
+  }
+
+  header#header .header_area .header_nav {
+    width: 280px;
+  }
+}
+
+/* --------------------------------
+タイトル
+---------------------------------*/
+
+.title {
+  color: #003C67;
+}
+
+.title_icon {
+  margin-right: 0.5rem;
+  width: 30px;
+}
+
+/* --------------------------------
+ボタン
+---------------------------------*/
+
+.button {
+  text-align: center;
+}
+
+.button.gradation_button a {
+  background: linear-gradient(to right, #0C5C96, #0096C3);
+  max-width: 380px;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 auto 1rem;
+}
+
+.button a {
+  border-radius: 20px;
+  color: #fff;
+  display: block;
+  height: 33px;
+  line-height: 33px;
+}
+
+.button a img {
+  width: 16px;
+}
+
+.item_box {
+  margin: 10px;
+}
+
+.item_box a {
+  display: block;
+}
+
+.item_box a img {
+  width: 120px;
+}
+
+/* --------------------------------
+パンくず
+---------------------------------*/
+
+.breadcrumb {
+  padding: 5.5rem 0px 1rem;
+  font-size: 12px;
+  color: #707070;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li:after {
+  content: ">";
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.breadcrumb li a {
+  color: #707070;
+}
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.pagination > li {
+  display: inline;
+}
+
+.pagination li a,
+.pagination li span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination li.active span {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+

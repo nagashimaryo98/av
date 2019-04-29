@@ -1,0 +1,42 @@
+@import "base"; // 変数定義
+
+/* --------------------------------
+記事ページ
+---------------------------------*/
+#article {
+    background-color:#fff;
+    .article_content {
+        padding:1rem 2rem;
+        @media screen and (max-width: 800px) {
+            padding:0.5rem 1rem;
+        }
+    }
+    h1 {
+        color: #262626;
+        margin: 10px 0;
+        font-size: 26px;
+        @media screen and (max-width: 800px) {
+            font-size: 16px;
+        }
+    }
+    h2 {
+        color: #333333;
+        font-size: 19px;
+        letter-spacing: 0.1em;
+        margin-top:3rem;
+        border-left: 5px solid #262626;
+        padding-left: 10px;
+    }
+    .comment_form_area {
+        h2 {
+            margin-top:0rem;
+        }
+    }
+    .post_content {
+        p {
+            font-size:14px;
+            line-height: 2em;
+            margin: 10px 0 20px;
+        }
+    }
+}

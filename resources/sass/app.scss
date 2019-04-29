@@ -1,0 +1,64 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html,body {
+	color: #262626;
+	font-family: "Lato", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", sans-serif;
+	height: 100%;
+	width: 100%;
+	letter-spacing: 0.05em;
+	line-height: 1.8;
+}
+
+.navbar-laravel {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.table {
+	thead {
+		th {
+			border-bottom: 1px solid #dee2e6;
+			padding: 0;
+			a {
+				display: block;
+				padding: 0.75rem;
+				@media screen and (max-width: 540px) {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+.cover {
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+}
+
+.item_list {
+	.cover {
+		padding-bottom: 100%;
+	}
+}
+
+body,
+.breadcrumb {
+	background-color:#fff;
+}
+
+.page-item.active .page-link {
+	background-color: #38c172;
+	border-color: #38c172;
+}
+.page-link {
+	color: #6c757d;
+}

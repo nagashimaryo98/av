@@ -1,0 +1,45 @@
+@import "base"; // 変数定義
+
+/* --------------------------------
+ニュース
+---------------------------------*/
+#news {
+    background-color:#fff;
+    .news_content {
+        padding:1rem 2rem;
+        @media screen and (max-width: 800px) {
+            padding:0.5rem 1rem;
+        }
+    }
+    .web_icon {
+        height: 13px;
+        width: 12px;
+    }
+    h1 {
+        color: #262626;
+        margin: 10px 0;
+        font-size: 26px;
+        @media screen and (max-width: 800px) {
+            font-size: 16px;
+        }
+    }
+    h2 {
+        color: #333333;
+        font-size: 19px;
+        letter-spacing: 0.1em;
+        border-left: 5px solid #262626;
+        padding-left: 10px;
+    }
+    .relation {
+        h2 {
+            margin-top:3rem;
+        }
+    }
+    .post_content {
+        p {
+            font-size:14px;
+            line-height: 2em;
+            margin: 10px 0 20px;
+        }
+    }
+}
